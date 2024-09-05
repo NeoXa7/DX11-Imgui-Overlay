@@ -205,8 +205,11 @@ namespace C_Elements
 		ImGui::PopStyleVar(2);
 	}
 
-	inline void LeaveLine()
+	inline void LeaveLine(int num)
 	{
-		ImGui::Dummy(ImVec2());
+		for (int i = 0; i < num; i++)
+		{
+			ImGui::Dummy(ImVec2());
+		}	
 	}
 }
