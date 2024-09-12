@@ -212,4 +212,11 @@ namespace C_Elements
 			ImGui::Dummy(ImVec2());
 		}	
 	}
+
+	template <typename type>
+	inline void ColorEditor(const char* label, type *color)
+	{
+		ImGui::ColorEdit4(label, (float*)color);	 
+	}
+
 }
